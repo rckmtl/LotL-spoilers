@@ -22,7 +22,8 @@ h1 {
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile/tablet */
-        gap: 5px; 
+        gap: 5px; /* Smaller gap for mobile */
+    }
 }
 
 .card-image {
