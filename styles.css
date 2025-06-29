@@ -5,9 +5,7 @@ body {
     background-image: url('images/spacebackground.png');
     background-size: cover;
     background-position: center;
-    background-color: #f4f4f4;
-    background-blend-mode: overlay;
-    opacity: 0.3; /* Subtle fade, adjust if needed */
+    background-color: #f4f4f4; /* Fallback color */
     text-align: center;
 }
 
@@ -25,7 +23,6 @@ h1 {
     padding: 10px;
 }
 
-/* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile/tablet */
