@@ -2,16 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 10px;
-    background-image: url('images/spacebackground.png');
-    background-size: cover;
-    background-position: center;
-    background-color: #f4f4f4; /* Fallback color */
+    background-image: url('images/background.jpg');
+    background-size: cover; /* Ensures the image covers the page without tiling */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-color: #f4f4f4; /* Fallback color if image fails to load */
     text-align: center;
 }
 
 h1 {
     color: #333;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Keeps title readable */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Keeps title readable against background */
 }
 
 .gallery {
@@ -23,6 +24,7 @@ h1 {
     padding: 10px;
 }
 
+/* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile/tablet */
