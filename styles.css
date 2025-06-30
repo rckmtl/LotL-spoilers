@@ -29,7 +29,7 @@ h1 {
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile/tablet */
+        grid-template-columns: repeat(2, 1fr); /* 3 columns on mobile/tablet */
         gap: 5px;
     }
 }
