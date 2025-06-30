@@ -17,7 +17,7 @@ h1 {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(7, minmax(200px, 1fr)); /* Default for desktop */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Default for desktop */
     gap: 3px;
  width: 100%; /* Full window width */
     max-width: 100%; /* Removes the 1200px cap */
