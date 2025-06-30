@@ -19,10 +19,11 @@ h1 {
     display: grid;
     grid-template-columns: repeat(7, minmax(200px, 1fr)); /* Default for desktop */
     gap: 3px;
-    max-width: 1920px;
-    margin: 0 auto;
+ width: 100%; /* Full window width */
+    max-width: 100%; /* Removes the 1200px cap */
+    margin: 0 auto; /* Centers if content exceeds window */
     padding: 10px;
-    position: center;
+    box-sizing: border-box; /* Ensures padding doesn’t add to width */
 }
 
 /* Mobile and tablet screens (up to 768px) */
