@@ -28,15 +28,15 @@ h1 {
 
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce padding on mobile */
+    }
     .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 5px;
-        padding: 5px;
-        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+        padding: 2px;
+        margin: 0;
         width: 100%;
-        max-width: 100%;
-    
         box-sizing: border-box;
     }
 }
