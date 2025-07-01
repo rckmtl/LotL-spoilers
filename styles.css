@@ -30,12 +30,12 @@ h1 {
 @media (max-width: 768px) {
     .gallery {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 3 columns on mobile/tablet */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 5px;
         padding: 5px;
         margin: 0 auto;
-        width: 100%
-        max-width: 100%
+        width: 100%;
+        max-width: 100%;
     
         box-sizing: border-box;
     }
