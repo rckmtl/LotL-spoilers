@@ -115,6 +115,9 @@ nav ul li a:hover {
     body {
         padding: 10px; /* Reduce padding on mobile */
     }
+    h1 {
+    font-size: 40px;
+    }
     .gallery {
         padding: 2px;
     }
