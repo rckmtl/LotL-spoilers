@@ -1,6 +1,7 @@
 body {
     font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
     margin: 0;
+    padding: 40px;
     background-image: url('images/spacebackground.png');
     background-size: cover;
     background-position: center;
@@ -8,7 +9,7 @@ body {
     text-align: center;
 }
 
-/* Version 1.2 - 2025-07-04 05:57 CDT */
+/* Version 1.1 - 2025-07-04 05:53 CDT */
 h1 {
     color: #e5b570;
     font-size: 80px;
@@ -18,7 +19,7 @@ h1 {
 }
 
 nav {
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 nav h2 {
@@ -34,7 +35,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 nav ul li a {
@@ -48,8 +49,7 @@ nav ul li a:hover {
 }
 
 .gallery-section {
-    margin-bottom: 0; 
-    
+    margin-bottom: 5px !important; /* Force 5px spacing with higher specificity */
 }
 
 .gallery-section h2 {
@@ -72,17 +72,15 @@ nav ul li a:hover {
     justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 .gallery-inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for card layout */
-    gap: 4px !important; /* Force 4px gap */
+    gap: 4px !important; /* Force 4px gap with higher specificity */
     width: fit-content; /* Limits width to content, enabling left alignment */
-    background-color: rgba(255, 0, 0, 0.1); /* Debug: Light red background on grid */
 }
 
 /* Ensure consistent card size with max-width */
@@ -90,7 +88,7 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     max-width: 200px; /* Caps the maximum width */
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
@@ -103,10 +101,10 @@ nav ul li a:hover {
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
-        padding: 0; /* Reduce padding on mobile */
+        padding: 10px; /* Reduce padding on mobile */
     }
     .gallery {
-        padding: 0;
+        padding: 2px;
     }
     .gallery-inner {
         grid-template-columns: repeat(2, 1fr); /* Forces 2 columns */
@@ -117,6 +115,6 @@ nav ul li a:hover {
     }
     nav ul li {
         display: block;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 }
