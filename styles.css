@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .gallery-section {
-    margin-bottom: 10px; /* Reduced from 40px to 10px (75% less) */
+    margin-bottom: 5px; /* Reduced from 10px to 5px (50% less) */
 }
 
 .gallery-section h2 {
@@ -78,7 +78,7 @@ nav ul li a:hover {
 .gallery-inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for card layout */
-    gap: 4px; /* Max 4px space between cards */
+    gap: 4px; /* Restores 4px gap between cards */
     width: fit-content; /* Limits width to content, enabling left alignment */
 }
 
