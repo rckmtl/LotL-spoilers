@@ -63,6 +63,7 @@ nav ul li a:hover {
     color: #e5b570;
     text-shadow: 3px 3px 5px rgba(8, 1, 1, 0.7);
     text-align: left;
+    margin-left: 20px;
 }
 
 .gallery-section h2 a {
@@ -79,7 +80,7 @@ nav ul li a:hover {
     justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    padding: 10px;
+    margin-left: 20px;
     box-sizing: border-box;
 }
 
