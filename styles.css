@@ -87,7 +87,6 @@ nav ul li a:hover {
 .gallery-inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for card layout */
-    gap: 4px; /* Max 4px space between cards */
     width: fit-content; /* Limits width to content, enabling left alignment */
 }
 
@@ -96,6 +95,7 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     max-width: 200px; /* Caps the maximum width */
+    gap: 4px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
