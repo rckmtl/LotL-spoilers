@@ -97,7 +97,6 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     max-width: 200px; /* Caps the maximum width */
-    
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -126,10 +125,7 @@ nav ul li a:hover {
         width: 100%;
         box-sizing: border-box;
     }
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
+   
  .card-image {
     width: 100%;
     height: auto;
