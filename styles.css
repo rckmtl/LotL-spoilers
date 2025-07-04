@@ -1,7 +1,7 @@
 body {
     font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
     margin: 0;
-    padding: 40px;
+    padding: 10px;
     background-image: url('images/spacebackground.png');
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@ h1 {
 }
 
 nav {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 nav h2 {
@@ -73,7 +73,7 @@ nav ul li a:hover {
     justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -90,7 +90,7 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     max-width: 200px; /* Caps the maximum width */
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
@@ -117,6 +117,6 @@ nav ul li a:hover {
     }
     nav ul li {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 }
