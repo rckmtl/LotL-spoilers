@@ -116,13 +116,11 @@ nav ul li a:hover {
         padding: 10px; /* Reduce padding on mobile */
     }
     .gallery {
+        padding: 2px;
+    }
+    .gallery-inner {
         grid-template-columns: repeat(2, 1fr); /* Forces 2 columns */
         gap: 2px; /* Reduced gap on mobile, still <= 4px */
-        padding: 2px;
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-        justify-content: flex-end; /* Right-align on mobile */
     }
     .card-image {
         max-width: 150px; /* Slightly smaller on mobile */
