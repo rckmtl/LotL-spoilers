@@ -62,11 +62,13 @@ nav ul li a:hover {
     font-size: 30px;
     color: #e5b570;
     text-shadow: 3px 3px 5px rgba(8, 1, 1, 0.7);
+    margin-left: 10px;
 }
 
 .gallery-section h2 a {
     color: inherit;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .gallery-section h2 a:hover {
@@ -80,6 +82,7 @@ nav ul li a:hover {
     max-width: 100%; /* No cap */
     padding: 0px;
     box-sizing: border-box;
+    margin-left: 10px;
 }
 
 .gallery-inner {
