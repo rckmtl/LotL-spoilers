@@ -1,11 +1,11 @@
 body {
-    font-family: 'Franklin Gothic Bold';
+    font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
     margin: 0;
     padding: 40px;
     background-image: url('images/spacebackground.png');
-    background-size: cover; /* Ensures the image covers the page without tiling */
-    background-position: center; /* Centers the image */
-    background-color: #f4f4f4; /* Fallback color if image fails to load */
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f4; /* Fallback color */
     text-align: center;
 }
 
@@ -13,8 +13,8 @@ h1 {
     color: #e5b570;
     font-size: 80px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Bold';
-    text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7); /* Keeps title readable against background */
+    font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
+    text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7);
 }
 
 .gallery {
