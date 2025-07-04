@@ -91,7 +91,7 @@ nav ul li a:hover {
 .gallery-inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for card layout */
-    gap: 4px !important; /* Force 4px gap with higher specificity */
+    gap: 4px; 
     width: fit-content; /* Limits width to content, enabling left alignment */
 }
 
