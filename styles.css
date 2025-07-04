@@ -58,14 +58,7 @@ nav ul li a:hover {
 .gallery-section {
     margin-bottom: 0px;
     margin-left: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Default for desktop */
-    gap: 4px;
-    width: 100%; /* Full window width */
-    max-width: 100%; /* Removes the 1200px cap */
-    margin: 0 auto; /* Centers if content exceeds window */
-    padding: 10px;
-    box-sizing: border-box; /* Ensures padding doesn’t add to width */
+    
 }
 
 
