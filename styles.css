@@ -110,26 +110,25 @@ nav ul li a:hover {
 .card-image:hover {
     transform: scale(1.05);
 }
-
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
         padding: 10px; /* Reduce padding on mobile */
     }
-
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2px;
+        grid-template-columns: repeat(2, 1fr); /* Forces 2 columns */
+        gap: 2px; /* Reduced gap on mobile, still <= 4px */
         padding: 2px;
         margin: 0;
         width: 100%;
         box-sizing: border-box;
+        justify-content: flex-end; /* Right-align on mobile */
+    }
+    .card-image {
+        max-width: 150px; /* Slightly smaller on mobile */
     }
     nav ul li {
         display: block;
         margin-bottom: 10px;
-    }
-    .card-image {
-        max-width: 150px; /* Slightly smaller max-width on mobile */
     }
 }
