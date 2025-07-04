@@ -14,11 +14,15 @@ h1 {
     font: 80px Arial Black;
     text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7); /* Keeps title readable against background */
 }
-
+h2 {
+    color: #e5b570;
+    font: 40px Arial Black;
+    text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7); /* Keeps title readable against background */
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Default for desktop */
-    gap: 3px;
+    gap: 4px;
  width: 100%; /* Full window width */
     max-width: 100%; /* Removes the 1200px cap */
     margin: 0 auto; /* Centers if content exceeds window */
