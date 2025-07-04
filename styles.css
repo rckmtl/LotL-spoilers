@@ -86,6 +86,7 @@ nav ul li a:hover {
     padding: 0px;
     box-sizing: border-box;
     margin-left: 20px;
+    gap: 4px; 
 }
 
 .gallery-inner {
@@ -103,7 +104,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
-    gap: 4px; 
+   
 }
 
 .card-image:hover {
