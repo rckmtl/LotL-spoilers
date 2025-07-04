@@ -1,10 +1,8 @@
 body {
-    * {
-padding:0;
-}
+  
     font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     background-image: url('images/spacebackground.png');
     background-size: cover;
     background-position: center;
@@ -22,7 +20,7 @@ h1 {
 }
 
 nav {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 nav h2 {
@@ -52,7 +50,7 @@ nav ul li a:hover {
 }
 
 .gallery-section {
-    margin-bottom: 5px !important; /* Force 5px spacing with higher specificity */
+    margin-bottom: 0px;
 }
 
 .gallery-section h2 {
@@ -75,7 +73,7 @@ nav ul li a:hover {
     justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -104,7 +102,7 @@ nav ul li a:hover {
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Reduce padding on mobile */
+        padding: 0px; /* Reduce padding on mobile */
     }
     .gallery {
         padding: 2px;
@@ -118,6 +116,6 @@ nav ul li a:hover {
     }
     nav ul li {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 }
