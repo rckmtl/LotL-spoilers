@@ -113,7 +113,7 @@ nav ul li a:hover {
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Reduce padding on mobile */
+        padding: 5px; /* Reduce padding on mobile */
     }
     h1 {
     font-size: 40px;
