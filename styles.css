@@ -67,15 +67,19 @@ nav ul li a:hover {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Maintains responsive grid */
-    gap: 4px; /* Max 4px space between cards */
+    display: flex; /* Switch to flexbox for alignment */
+    justify-content: flex-end; /* Right-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    margin: 0; /* Remove centering to allow right alignment */
     padding: 10px;
     box-sizing: border-box;
-    justify-content: flex-end; /* Right-aligns cards within the grid */
+}
+
+.gallery-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for card layout */
+    gap: 4px; /* Max 4px space between cards */
+    width: fit-content; /* Limits width to content, enabling right alignment */
 }
 
 /* Ensure consistent card size with max-width */
@@ -99,13 +103,11 @@ nav ul li a:hover {
         padding: 10px; /* Reduce padding on mobile */
     }
     .gallery {
+        padding: 2px;
+    }
+    .gallery-inner {
         grid-template-columns: repeat(2, 1fr); /* Forces 2 columns */
         gap: 2px; /* Reduced gap on mobile, still <= 4px */
-        padding: 2px;
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-        justify-content: flex-end; /* Right-align on mobile */
     }
     .card-image {
         max-width: 150px; /* Slightly smaller on mobile */
