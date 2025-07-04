@@ -16,7 +16,7 @@ h1 {
 }
 h2 {
     color: #e5b570;
-    font: 40px Arial Black;
+    font: 24px Arial Black;
     text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7); /* Keeps title readable against background */
 }
 .gallery {
