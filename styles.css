@@ -85,6 +85,7 @@ nav ul li a:hover {
     justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
+    margin: 0 auto; 
     padding: 0px;
     box-sizing: border-box;
     margin-left: 20px;
