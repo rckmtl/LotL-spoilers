@@ -67,8 +67,8 @@ nav ul li a:hover {
 }
 
 .gallery {
-    display: flex; /* Switch to flexbox for alignment */
-    justify-content: flex-end; /* Right-aligns the card wrapper */
+    display: flex; /* Flexbox for alignment */
+    justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
     padding: 10px;
@@ -79,7 +79,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for card layout */
     gap: 4px; /* Max 4px space between cards */
-    width: fit-content; /* Limits width to content, enabling right alignment */
+    width: fit-content; /* Limits width to content, enabling left alignment */
 }
 
 /* Ensure consistent card size with max-width */
