@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .gallery-section {
-    margin-bottom: 40px;
+    margin-bottom: 10px; /* Reduced from 40px to 10px (75% less) */
 }
 
 .gallery-section h2 {
@@ -68,20 +68,21 @@ nav ul li a:hover {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Default for desktop */
-    gap: 4px;
-    width: 100%; /* Full window width */
-    max-width: 100%; /* Removes the 1200px cap */
-    margin: 0 auto; /* Centers if content exceeds window */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Maintains responsive grid */
+    gap: 4px; /* Max 4px space between cards */
+    width: 100%; /* Full width */
+    max-width: 100%; /* No cap */
+    margin: 0; /* Remove centering to allow right alignment */
     padding: 10px;
-    box-sizing: border-box; /* Ensures padding doesn’t add to width */
+    box-sizing: border-box;
+    justify-content: flex-end; /* Right-aligns cards within the grid */
 }
 
 /* Ensure consistent card size with max-width */
 .card-image {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Caps the maximum width of each card */
+    max-width: 200px; /* Caps the maximum width */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -98,18 +99,19 @@ nav ul li a:hover {
         padding: 10px; /* Reduce padding on mobile */
     }
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2px;
+        grid-template-columns: repeat(2, 1fr); /* Forces 2 columns */
+        gap: 2px; /* Reduced gap on mobile, still <= 4px */
         padding: 2px;
         margin: 0;
         width: 100%;
         box-sizing: border-box;
+        justify-content: flex-end; /* Right-align on mobile */
+    }
+    .card-image {
+        max-width: 150px; /* Slightly smaller on mobile */
     }
     nav ul li {
         display: block;
         margin-bottom: 10px;
-    }
-    .card-image {
-        max-width: 150px; /* Slightly smaller max-width on mobile */
     }
 }
