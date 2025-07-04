@@ -73,8 +73,8 @@ nav ul li a:hover {
     justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
     box-sizing: border-box;
 }
 
