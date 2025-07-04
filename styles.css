@@ -14,11 +14,7 @@ h1 {
     font: 80px Arial Black;
     text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7); /* Keeps title readable against background */
 }
-h2 {
-    color: #e5b570;
-    font: 24px Arial Black;
-    text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7); /* Keeps title readable against background */
-}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Default for desktop */
