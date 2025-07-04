@@ -31,7 +31,7 @@ nav h2 {
     font-size: 24px;
     color: #e5b570;
     text-shadow: 2px 2px 4px rgba(8, 1, 1, 0.7);
-    text-align: left;
+    
 }
 
 nav ul {
@@ -62,6 +62,7 @@ nav ul li a:hover {
     font-size: 30px;
     color: #e5b570;
     text-shadow: 3px 3px 5px rgba(8, 1, 1, 0.7);
+    text-align: left;
 }
 
 .gallery-section h2 a {
