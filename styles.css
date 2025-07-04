@@ -138,6 +138,7 @@ nav ul li a:hover {
     cursor: pointer;
     transition: transform 0.2s;
 }
+}
 
 .card-image:hover {
     transform: scale(1.05);
