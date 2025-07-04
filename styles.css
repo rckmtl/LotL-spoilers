@@ -54,7 +54,7 @@ nav ul li a:hover {
 }
 
 .gallery-section {
-    margin-bottom: 0px;
+    margin-bottom: 10px; /* Reduced from 40px to 10px (75% less) */
 }
 
 .gallery-section h2 {
@@ -73,15 +73,19 @@ nav ul li a:hover {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Maintains responsive grid */
-    gap: 4px; /* Max 4px space between cards */
+    display: flex; /* Flexbox for alignment */
+    justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    margin: 0; /* Remove centering to allow right alignment */
     padding: 10px;
     box-sizing: border-box;
-    justify-content: flex-end; /* Right-aligns cards within the grid */
+}
+
+.gallery-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for card layout */
+    gap: 4px; /* Max 4px space between cards */
+    width: fit-content; /* Limits width to content, enabling left alignment */
 }
 
 /* Ensure consistent card size with max-width */
