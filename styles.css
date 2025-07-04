@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 .gallery-section {
     margin-bottom: 5px !important; /* Force 5px spacing */
-    border-bottom: 1px dashed red; /* Debug: Visual indicator between sections */
+    
 }
 
 .gallery-section h2 {
@@ -103,7 +103,7 @@ nav ul li a:hover {
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Reduce padding on mobile */
+        padding: 5px; /* Reduce padding on mobile */
     }
     .gallery {
         padding: 2px;
