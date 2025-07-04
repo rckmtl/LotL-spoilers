@@ -58,7 +58,7 @@ nav ul li a:hover {
 .gallery-section {
     margin-bottom: 0px;
     margin-left: 20px;
-     display: flex; /* Flexbox for alignment */
+    display: flex; /* Flexbox for alignment */
     justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
