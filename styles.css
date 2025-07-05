@@ -11,7 +11,7 @@ body {  font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
   background-color: #f4f4f4; /* Fallback color */
   text-align: center;
 
-}/* Version 1.1 - 2025-07-04 05:53 CDT */
+}
 h1 {
     color: #e5b570;
     font-size: 80px;
@@ -28,7 +28,7 @@ h1 {
     padding: 0;
 }nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
 }nav ul li a {
     color: #e5b570;
     text-decoration: none;
@@ -36,7 +36,7 @@ h1 {
 }nav ul li a:hover {
     text-decoration: underline;
 }.gallery-section {
-    margin-bottom: 0px; /* Reduced from 40px to 10px (75% less) */
+    margin-bottom: 0px; 
 }.gallery-section h2 {
     font-size: 30px;
     color: #e5b570;
@@ -59,7 +59,7 @@ h1 {
 }.gallery-inner {
     display: grid;
     gap: 4px;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr)); /* Grid for card layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid for card layout */
     width: fit-content; /* Limits width to content, enabling left alignment */
 }
 /* Ensure consistent card size with max-width */
