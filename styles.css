@@ -80,7 +80,7 @@ h1 {
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
-        padding: 5px; /* Reduce padding on mobile */
+        padding: 0px; /* Reduce padding on mobile */
     }
     h1 {
         font-size: 40px;
@@ -91,7 +91,7 @@ h1 {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
         gap: 2px;
-        padding: 2px;
+        padding: 0px;
         margin: 0;
         width: 100%;
         box-sizing: border-box;
