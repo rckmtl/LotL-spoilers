@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-/* Version 1.4 - 2025-07-05 01:04 CDT */
+/* Version 1.5 - 2025-07-05 01:09 CDT */
 h1 {
     color: #e5b570;
     font-size: 80px;
@@ -76,19 +76,18 @@ nav ul li a:hover {
 }
 
 .gallery {
-    display: flex; /* Flexbox for alignment */
-    justify-content: flex-start; /* Left-aligns the card wrapper */
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
     padding: 10px;
     box-sizing: border-box;
+    /* Removed display: flex to let grid handle layout */
 }
 
 .gallery-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Fixed grid syntax */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamic columns */
     gap: 4px !important; /* Enforces 4px gap */
-    width: fit-content; /* Limits width to content */
+    width: 100%; /* Use full container width */
     background-color: rgba(255, 0, 0, 0.1); /* Debug indicator */
 }
 
