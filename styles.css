@@ -101,7 +101,6 @@ h1 {
         width: 100%; /* Ensure full width */
     }
     .card-image {
-        max-width: 200px; /* Remove max-width to allow cards to fill grid columns */
         width: 100%; /* Ensure cards take full column width */
         height: auto;
     }
