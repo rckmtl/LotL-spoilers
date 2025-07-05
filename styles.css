@@ -36,7 +36,7 @@ h1 {
 }nav ul li a:hover {
     text-decoration: underline;
 }.gallery-section {
-    margin-bottom: 5px; /* Reduced from 40px to 10px (75% less) */
+    margin-bottom: 0px; /* Reduced from 40px to 10px (75% less) */
 }.gallery-section h2 {
     font-size: 30px;
     color: #e5b570;
