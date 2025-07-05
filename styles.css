@@ -88,10 +88,13 @@ h1 {
     nav h2 {
         font-size: 16px;
     }
-    @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile/tablet */
-        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+        padding: 2px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -107,4 +110,4 @@ h1 {
 .card-image:hover {
     transform: scale(1.05);
 }
-}
+
