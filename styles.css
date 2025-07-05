@@ -1,134 +1,98 @@
-* {
-    margin: 0;
-    padding: 0;
+{
+margin: 0;
+padding: 0;
 }
+body {  font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
+  margin: 0;
+  padding: 0px;
+  background-image: url('images/spacebackground.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #f4f4f4; /* Fallback color */
+  text-align: center;
 
-body {
-    font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
-    margin: 0;
-    padding: 0px;
-    background-image: url('images/spacebackground.png');
-    background-size: cover;
-    background-position: center;
-    background-color: #f4f4f4; /* Fallback color */
-    text-align: center;
-}
-
-/* Version 1.5 - 2025-07-05 01:09 CDT */
+}/* Version 1.1 - 2025-07-04 05:53 CDT */
 h1 {
     color: #e5b570;
     font-size: 80px;
     font-weight: bold;
     font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
     text-shadow: 5px 5px 7px rgba(8, 1, 1, 0.7);
-}
-
-nav {
+}nav {
     margin-bottom: 0px;
-}
-
-nav h2 {
+}nav h2 {
     font-size: 24px;
     color: #e5b570;
-    text-shadow: 2px 2px 4px rgba(8, 1, 1, 0.7);
-}
-
-nav ul {
+    text-shadow: 2px 2px 4px rgba(8, 1, 1, 0.7);}nav ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav ul li {
+}nav ul li {
     display: inline;
     margin-right: 15px;
-}
-
-nav ul li a {
+}nav ul li a {
     color: #e5b570;
     text-decoration: none;
     font-size: 18px;
-}
-
-nav ul li a:hover {
+}nav ul li a:hover {
     text-decoration: underline;
-}
-
-.gallery-section {
-    margin-bottom: 10px; /* Kept at 10px per your preference */
-    border-bottom: 1px dashed red; /* Debug indicator */
-}
-
-.gallery-section h2 {
+}.gallery-section {
+    margin-bottom: 10px; /* Reduced from 40px to 10px (75% less) */
+}.gallery-section h2 {
     font-size: 30px;
     color: #e5b570;
     text-shadow: 3px 3px 5px rgba(8, 1, 1, 0.7);
     text-align: left;
     margin-left: 20px;
-}
-
-.gallery-section h2 a {
+}.gallery-section h2 a {
     color: inherit;
     text-decoration: none;
-}
-
-.gallery-section h2 a:hover {
+}.gallery-section h2 a:hover {
     text-decoration: underline;
-}
-
-.gallery {
+}.gallery {
+    display: flex; /* Flexbox for alignment */
+    justify-content: flex-start; /* Left-aligns the card wrapper */
+    gap: 4px;
     width: 100%; /* Full width */
     max-width: 100%; /* No cap */
-    padding: 10px;
+    margin-left: 20px;
     box-sizing: border-box;
-    /* Removed display: flex to let grid handle layout */
-}
-
-.gallery-inner {
+}.gallery-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamic columns */
-    gap: 4px !important; /* Enforces 4px gap */
-    width: 100%; /* Use full container width */
-    background-color: rgba(255, 0, 0, 0.1); /* Debug indicator */
+    gap: 4px;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr)); /* Grid for card layout */
+    width: fit-content; /* Limits width to content, enabling left alignment */
 }
-
 /* Ensure consistent card size with max-width */
 .card-image {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Caps the maximum width */
+    max-width: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
 }
-
 .card-image:hover {
     transform: scale(1.05);
 }
-
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
         padding: 5px; /* Reduce padding on mobile */
     }
     h1 {
-        font-size: 40px;
+    font-size: 40px;
     }
     nav h2 {
-        font-size: 16px;
+    font-size: 16px;
     }
     .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
         padding: 2px;
-    }
-    .gallery-inner {
-        grid-template-columns: repeat(2, 1fr); /* Forces 2 columns */
-        gap: 2px !important; /* Reduced gap on mobile */
-    }
-    .card-image {
-        max-width: 150px; /* Slightly smaller on mobile */
-    }
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
+
