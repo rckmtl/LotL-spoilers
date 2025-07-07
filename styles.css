@@ -78,6 +78,10 @@ h1 {
 .card-image:hover {
     transform: scale(1.05);
 }
+.hitcounter {
+  display: none;
+}
+             
 /* Mobile and tablet screens (up to 768px) */
 @media (max-width: 768px) {
     body {
